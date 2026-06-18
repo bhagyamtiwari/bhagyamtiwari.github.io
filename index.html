@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhagyam Tiwari personal website</title>
+<title>Bhagyam's personal website</title>
 
 <meta name="description" content="Bhagyam Tiwari is the founder and CEO of Zarketplace. Studied finance in Manhattan, New York and currently building ventures in the Indian startup ecosystem.">
 <meta name="robots" content="index, follow">
 
-<link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAA4FuAAQg/UADYW6QDw1scAORvdAEcO0QBjqs4AY6jRAGSsywBmqNEAaqnLAGynzgBsqs4AcazLAN/v9wC8QRMAvUIWAPrr4gCaw9kA6vb6AEQO0gBbrc8ANhfkALfK9gA3GeEARA/VADgX5ACAtdQARBjMAGWqzwCgyN8Aa6fPAPL9/QD3+v0A+P73APv9/QD8/f0Arrj3AP39/QC5QRQA1ZV9AJDA2gDFg2MAsNXrADQX5QBDDtMAQxDQAEQO0wA2F+UARBDQAEUO0wBjqMoAsFo7AGOq0AA9F+UAZqnNAGirygA5LdYAa6nNAJih4QBpcdoA/vz7AIqdsgD+/f4AuUMSAJi95AB/tc0AQRbIADUW4wBDENEAOB7XAEcQ0QBlq8sArUATAGmrywBpqc4A+P75AG+n0QD8/PwA+v/8AK9FIgC/RA0AhanFALLT5wBAEcwAPxDSAEAawwA1FuQAMxXqADYW5AA2GOEARBDSANjc+ABmqc8A9fn9AObEsQBsqc8APDXMAPn8/QD++PoAuEQOAN/v+wB8qcYAPBHNALtqSQA1GOIANhblADYY4gBEENMAOBjiAJRqXABnqdAAZ6vNAK8+GABYTMkArbvpALNFGwCxSBsANRrXAEEVyABDD9EANRjjADcY4wBGD9EAm8TqAM6McACy3/IAaqrLAGmp0QDY6vcAu9/yAPz+/AD9/vwAeKnIAMDi8gCQvNwA////AHytwgDm7/0AxoNoAEIRzwA2GOQARBHPAGqqzABsqM8Ab6zJAPj+/QCly+UA/fv9APz+/QDf6f4A/f79AHmwzACq0+sAwUIUAD0O2QBDD9MARA/TAEUP0wBGEdAAn7ryAGem0wBnqNAAaKbTAGmo0ABZTskAca3NAK+19QD9/fsA/vv+AKXQ7AD+/v4AuUIVAL5DDwBEOtYAQhTIADUX4wA1GeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAq6smJiYkqDqQlSQmJqsmiKsmJiZMplBqFHFChKurq4iIqyY/HyoWFjJ4NE2rqyaIiCYmOHSNFkSeeC9JmKsmiIirYm52FlcpQXh4Q0Cpq4iIq4ljShWnWIwXRwERkSaIq5IPAHqqj0hwZyUZVppPiIgbJxqghoIrU36Zh59kk4irpH18NV0MgKMIoW8JB6KIq1IDsFcweUavLi2cRSgNiIg+XxixbWtaey6dbI6LZoiIhWiKXpYEE3IigXMhdWCIiH+sNpSuPDllO3ccXBALiIgOrSxZFhZEMnhbeJtRIIirq0thWQJpsAUxVVSlCoOIq6smIz0SMwYdNx6XJiZOiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+<link rel="icon" href="https://wfaxtxprngyrxsmahxxa.supabase.co/storage/v1/object/public/digitalassets/pfp-favicon.png">
 
 <style>
 :root{
@@ -78,9 +78,7 @@ nav{
  padding-top:8px;
 }
 
-.dropdown:hover .dropdown-content{
- display:block;
-}
+
 
 .dropdown-content a,
 .dropdown-content span{
@@ -125,54 +123,76 @@ nav{
  margin-top:2px;
  font-size:14px;
  font-weight:400;
- opacity:.75;
+ opacity:1;
 }
 
+
 @media (max-width:900px){
+
+ body{
+  overflow-x:hidden;
+ }
 
  nav{
   position:static;
   padding:18px;
   flex-direction:column;
+  align-items:flex-start;
   gap:16px;
  }
 
  .nav-left,
  .nav-right{
+  width:100%;
   flex-wrap:wrap;
   gap:14px;
  }
 
  .container{
-  padding:24px;
+  padding:0 20px 60px;
  }
 
  .bio,
  .datetime,
  .identity{
   position:static;
-  margin-top:36px;
  }
 
- .bio{
-  max-width:100%;
+ .identity{
+  margin-top:48px;
  }
 
  .identity h1{
-  font-size:34px;
-  white-space:normal;
+  font-size:42px;
+  white-space:nowrap;
  }
 
  .datetime{
+  margin-top:18px;
+  margin-bottom:28px;
   font-size:13px;
  }
 
+ .bio{
+  margin-top:36px;
+  max-width:100%;
+  font-size:15px;
+  line-height:1.5;
+ }
+
  .dropdown-content{
+  display:none;
   position:static;
+  padding-top:10px;
+  padding-left:12px;
+  min-width:0;
+ }
+
+ .dropdown.active .dropdown-content{
   display:block;
-  padding-left:10px;
  }
 }
+
 </style>
 </head>
 
@@ -184,7 +204,7 @@ nav{
 <div>home</div>
 
 <div class="dropdown">
-<button class="nav-btn">blog ▾</button>
+<button class="nav-btn" onclick="toggleDropdown(this)">blog ▾</button>
 <div class="dropdown-content">
 <span>temporarily disabled</span>
 </div>
@@ -194,7 +214,7 @@ nav{
 <div class="nav-right">
 
 <div class="dropdown">
-<button class="nav-btn">contact ▾</button>
+<button class="nav-btn" onclick="toggleDropdown(this)">contact ▾</button>
 <div class="dropdown-content">
 <a href="mailto:bhagyamtiwari@proton.me">bhagyamtiwari@proton.me</a>
 <a href="mailto:bhagyam@zarketplace.com">bhagyam@zarketplace.com</a>
@@ -203,7 +223,7 @@ nav{
 </div>
 
 <div class="dropdown">
-<button class="nav-btn">socials ▾</button>
+<button class="nav-btn" onclick="toggleDropdown(this)">socials ▾</button>
 <div class="dropdown-content">
 <a href="https://instagram.com/bhagyamtiwari" target="_blank">ig</a>
 <a href="https://x.com/maygahb" target="_blank">x</a>
@@ -212,7 +232,7 @@ nav{
 </div>
 
 <div class="dropdown">
-<button class="nav-btn">zarketplace ▾</button>
+<button class="nav-btn" onclick="toggleDropdown(this)">zarketplace ▾</button>
 <div class="dropdown-content">
 <a href="https://zarketplace.com" target="_blank">zarketplace.com</a>
 <a href="https://instagram.com/zarketplace" target="_blank">@zarketplace (ig)</a>
@@ -301,9 +321,31 @@ function updateIndiaTime() {
   hour12: true
  }).toLowerCase();
 
- document.getElementById('time').textContent =
-  `${indiaTime} (new delhi, india)`;
+ document.getElementById('time').textContent = `${indiaTime} (new delhi, india)`;
 }
+
+
+function toggleDropdown(button){
+
+ const dropdown = button.parentElement;
+
+ if(window.innerWidth <= 1024){
+   dropdown.classList.toggle('active');
+ } else {
+   const menu = dropdown.querySelector('.dropdown-content');
+   menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+ }
+}
+
+document.addEventListener('click', function(e){
+ document.querySelectorAll('.dropdown').forEach(d=>{
+   if(!d.contains(e.target)){
+     d.classList.remove('active');
+     const m=d.querySelector('.dropdown-content');
+     if(m) m.style.display='';
+   }
+ });
+});
 
 function toggleTheme() {
  const current = document.documentElement.getAttribute('data-theme');
