@@ -148,34 +148,53 @@ nav{
  }
 
  .container{
+  display:flex;
+  flex-direction:column;
+
   padding:0 20px 60px;
  }
 
- .bio,
- .datetime,
  .identity{
-  position:static;
- }
+  order:1;
 
- .identity{
-  margin-top:48px;
+  position:static;
+
+  margin-top:32px;
+  margin-bottom:32px;
+
+  width:100%;
+
+  text-align:center;
  }
 
  .identity h1,
  .identity h2{
   font-size:42px;
   white-space:nowrap;
+  line-height:.95;
  }
 
  .datetime{
-  margin-top:18px;
-  margin-bottom:28px;
+  order:2;
+
+  position:static;
+
+  margin:0 0 28px 0;
+
+  text-align:center;
+
   font-size:13px;
  }
 
  .bio{
-  margin-top:36px;
+  order:3;
+
+  position:static;
+
+  margin:0;
+
   max-width:100%;
+
   font-size:15px;
   line-height:1.5;
  }
@@ -255,7 +274,7 @@ founder &amp; ceo @
 
 <br><br>
 
-international peripatetic upbringing and education
+shaped by an international, peripatetic upbringing
 <br>
 (+375, +90, +92, +91, +1).
 
