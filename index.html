@@ -110,20 +110,19 @@ nav{
 }
 
 .identity h1{
- font-size:56px;
+ font-size:clamp(32px, 5vw, 56px);
  font-weight:700;
  letter-spacing:-2px;
  white-space:nowrap;
  line-height:.95;
 }
 
+.identity h1,
 .identity h2{
- font-size:56px;
- font-weight:700;
- letter-spacing:-2px;
- white-space:nowrap;
- line-height:.95;
- margin:0;
+    font-size:min(11vw, 56px);
+    white-space:nowrap;
+    line-height:.95;
+    letter-spacing:-1px;
 }
 
 @media (max-width:900px){
