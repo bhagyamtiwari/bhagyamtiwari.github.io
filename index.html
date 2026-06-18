@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhagyam's personal website</title>
+<title>Bhagyam Tiwari personal website</title>
 
 <meta name="description" content="Bhagyam Tiwari is the founder and CEO of Zarketplace. Studied finance in Manhattan, New York and currently building ventures in the Indian startup ecosystem.">
 <meta name="robots" content="index, follow">
@@ -78,8 +78,6 @@ nav{
  padding-top:8px;
 }
 
-
-
 .dropdown-content a,
 .dropdown-content span{
  display:block;
@@ -119,13 +117,14 @@ nav{
  line-height:.95;
 }
 
-.identity p{
- margin-top:2px;
- font-size:14px;
- font-weight:400;
- opacity:1;
+.identity h2{
+ font-size:56px;
+ font-weight:700;
+ letter-spacing:-2px;
+ white-space:nowrap;
+ line-height:.95;
+ margin:0;
 }
-
 
 @media (max-width:900px){
 
@@ -162,7 +161,8 @@ nav{
   margin-top:48px;
  }
 
- .identity h1{
+ .identity h1,
+ .identity h2{
   font-size:42px;
   white-space:nowrap;
  }
@@ -275,7 +275,6 @@ returned to build ventures in the indian ecosystem.
 
 <div class="identity">
 <h1>BHAGYAM TIWARI</h1>
-<p>whatsapp: +91 88 600 33 999</p>
 </div>
 
 </div>
@@ -324,7 +323,6 @@ function updateIndiaTime() {
  document.getElementById('time').textContent = `${indiaTime} (new delhi, india)`;
 }
 
-
 function toggleDropdown(button){
 
  const dropdown = button.parentElement;
@@ -363,7 +361,6 @@ if (saved) {
 
 updateIndiaTime();
 setInterval(updateIndiaTime, 1000);
-
 </script>
 
 </body>
