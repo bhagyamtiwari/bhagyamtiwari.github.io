@@ -261,79 +261,67 @@ returned to build ventures in the indian ecosystem.
 </div>
 
 <script>
-function updateIndiaTime(){
+function updateIndiaTime() {
 
- const now=new Date();
+ const now = new Date();
 
- const india=new Date(
-  now.toLocaleString('en-US',{timeZone:'Asia/Kolkata'})
+ const india = new Date(
+  now.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' })
  );
 
- const year=india.getFullYear();
+ const year = india.getFullYear();
 
- const start=new Date(year,0,0);
+ const start = new Date(year, 0, 0);
 
- const day=Math.floor(
-  (india-start)/(1000*60*60*24)
+ const day = Math.floor(
+  (india - start) / (1000 * 60 * 60 * 24)
  );
 
- const total=((year%4===0&&year%100!==0)||year%400===0)
- ?366
- :365;
+ const total =
+  ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0)
+   ? 366
+   : 365;
 
- const pct=Math.floor((day/total)*100);
+ const pct = Math.floor((day / total) * 100);
 
- document.getElementById('date').innerHTML=
- new Intl.DateTimeFormat(
-  'en-GB',
-  {
-   timeZone:'Asia/Kolkata',
-   day:'2-digit',
-   month:'long',
-   year:'numeric'
-  }
- ).format(now)
- + ` (${pct}%, ${day}/${total})`;
+ document.getElementById('date').innerHTML =
+  new Intl.DateTimeFormat('en-GB', {
+   timeZone: 'Asia/Kolkata',
+   day: '2-digit',
+   month: 'long',
+   year: 'numeric'
+  }).format(now) +
+  ` (${pct}%, ${day}/${total})`;
 
- const indiaTime=now.toLocaleTimeString(
-  'en-US',
-  {
-   timeZone:'Asia/Kolkata',
-   hour:'numeric',
-   minute:'2-digit',
-   second:'2-digit',
-   hour12:true
-  }
- ).toLowerCase();
+ const indiaTime = now.toLocaleTimeString('en-US', {
+  timeZone: 'Asia/Kolkata',
+  hour: 'numeric',
+  minute: '2-digit',
+  second: '2-digit',
+  hour12: true
+ }).toLowerCase();
 
- const localTime=now.toLocaleTimeString(
-  'en-US',
-  {
-   hour:'numeric',
-   minute:'2-digit',
-   second:'2-digit',
-   hour12:true
-  }
- ).toLowerCase();
+ document.getElementById('time').textContent =
+  `${indiaTime} (new delhi, india)`;
+}
 
- document.getElementById('time').innerHTML=
- `${localTime} (where you are)<br>${indiaTime} (new delhi, india)`;
+function toggleTheme() {
+ const current = document.documentElement.getAttribute('data-theme');
+ const next = current === 'dark' ? 'light' : 'dark';
+
+ document.documentElement.setAttribute('data-theme', next);
+ localStorage.setItem('theme', next);
+}
+
+const saved = localStorage.getItem('theme');
+
+if (saved) {
+ document.documentElement.setAttribute('data-theme', saved);
 }
 
 updateIndiaTime();
-setInterval(updateIndiaTime,1000);
+setInterval(updateIndiaTime, 1000);
 
-function toggleTheme(){
- const current=document.documentElement.getAttribute('data-theme');
- const next=current==='dark'?'light':'dark';
- document.documentElement.setAttribute('data-theme',next);
- localStorage.setItem('theme',next);
-}
-
-const saved=localStorage.getItem('theme');
-if(saved){
- document.documentElement.setAttribute('data-theme',saved);
-}
 </script>
 
 </body>
